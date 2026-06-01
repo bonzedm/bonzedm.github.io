@@ -1,0 +1,35 @@
+/* 1. 更改全站的主題色（包含版權圖示、連結懸停顏色等） */
+:root {
+  --theme-color: #b147e2;      /* 網站主要顏色 */
+  --text-hover: #FF5722;       /* 文字游標滑過時的顏色 */
+  --btn-bg: #FF5722;           /* 按鈕背景色 */
+  --btn-hover-color: #E64A19;  /* 按鈕滑過時的顏色 (建議選深一點) */
+  --a-hover: #FF5722;          /* 超連結滑過顏色 */
+}
+
+/* 2. 針對文章底部的「標籤 (Tags)」單獨改色 */
+.post-meta__tags {
+  color: #5c3e69 !important;         /* 標籤文字顏色 */
+  border-color: #5c3e69 !important;  /* 標籤外框顏色 */
+}
+
+/* 標籤游標滑過時的顏色變化 */
+.post-meta__tags:hover {
+  background: #b147e2 !important;    /* 滑過時背景變色 */
+  color: #ffffff !important;         /* 滑過時文字變白色 */
+}
+
+/* 文章底下版權與鏈接顏色變化 */
+#post .post-copyright .post-copyright-meta {
+    color: #5c3e69 !important;
+    font-weight: bold;
+}
+
+#post .post-copyright:before {
+    position: absolute;
+    top: 2px;
+    right: 12px;
+    color: #5c3e69 !important;
+    content: '\f1f9';
+    font-size: 1.3em;
+}
