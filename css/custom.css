@@ -46,6 +46,12 @@ a {
 a:hover {
     color: #af9fb9;
 }
+html[data-theme='dark'] a {
+    color: #af9fb9;
+}
+html[data-theme='dark'] a:hover {
+    color: #876999;
+}
 
 /* 網頁背景 */
 #web_bg {
