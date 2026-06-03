@@ -25,7 +25,7 @@
     --light-grey: #eee;
     --dark-grey: #cacaca;
     --white: #fff;
-    --text-highlight-color: #1f2d3d;
+    --text-highlight-color: #1e1422;
     --blockquote-color: #6a737d;
     --blockquote-bg: rgba(73, 177, 245, 0.1);
     --reward-pop: #f5f5f5;
@@ -38,6 +38,12 @@
     --default-bg-color: #5c3e69;
     --zoom-bg: #fff;
     --mark-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* 修改滑鼠反白選取的顏色 */
+::selection {
+    background-color: #a86fc0a1; /* 例如換成粉藍色：#A6D8FA */
+    color: #ffffff; /* 反白時的文字顏色，通常配白色或深色 */
 }
 
 a {
@@ -116,14 +122,12 @@ html[data-theme='dark'] #aside-content .card-info #card-info-btn:hover {
 }
 
 /* Recent Posts欄 */
-#aside-content .aside-list > .aside-list-item .content > .title:hover, #aside-content .aside-list > .aside-list-item .content > .comment:hover {
+#aside-content .aside-list > .aside-list-item .content > .title:hover, 
+#aside-content .aside-list > .aside-list-item .content > .comment:hover {
     color: #af9fb9;
 }
 
 /* Tag欄hover */
-element.style {
-  color: #5c3e69 !important;
-}
 #aside-content .card-tag-cloud a:hover {
   color: #af9fb9 !important;
 }
@@ -140,6 +144,11 @@ element.style {
     background: #625169 !important;
     color: #fff !important;
 }
+#aside-content #card-toc .toc-percentage {
+    font-style: normal !important;
+    color: #a58fadd3 !important;
+    font-family: 'PopRumKiwi', sans-serif !important;
+}
 
 
 
@@ -155,7 +164,9 @@ element.style {
   color: #ffffff !important;         /* 滑過時文字變白色 */
 }
 
-/***** 歷史歸檔頁 *****/
+/*================================
+            歷史歸檔頁
+==================================*/
 /* 歷史歸檔頁左邊圓圈 */
 .article-sort-title:before {
     position: absolute;
@@ -268,6 +279,24 @@ element.style {
     color: #af9fb9;
 }
 
+
+/*************************/
+/*       閱讀模式        */
+/*************************/
+.read-mode {
+    --font-color: #4c4948;
+    --readmode-light-color: #fff;
+    --white: #4c4948;
+    --light-grey: #4c4948;
+    --gray: #d6dbdf;
+    --hr-border: #d6dbdf;
+    --hr-before-color: #b9c2c9;
+    --highlight-bg: #f7f7f7;
+    --exit-btn-bg: #5c3e69;
+    --exit-btn-color: #fff;
+    --exit-btn-hover: #d2cadf;
+    --pseudo-hover: none;
+}
 
 /* 夜間模式 */
 html[data-theme='dark'] {
@@ -395,4 +424,21 @@ html[data-theme='dark'] .social-share .icon-facebook {
 html[data-theme='dark'] .social-share .icon-facebook:hover {
     background: #6896f1;
     color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'PopRumKiwi'; /* 幫它取個好記的名稱 */
+    src: url('/fonts/PopRumKiwi-Telop.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* 這可以優化網頁載入體驗，讓字體還沒載入完時先顯示預設字體 */
 }
