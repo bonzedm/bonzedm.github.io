@@ -1,3 +1,10 @@
+strong, b {
+  font-weight: 800 !important;
+  color: #d124ba !important; /* 換成你粉色恐龍的同色系粉紅 */
+  padding: 0 2px;           /* 讓底色稍微有一點邊距 */
+  border-radius: 20px;       /* 圓角更可愛 */
+}
+
 :root {
     --global-font-size: 14px;
     --global-bg: #f7eafda1;
