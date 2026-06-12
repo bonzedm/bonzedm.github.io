@@ -5,6 +5,16 @@ strong, b {
   border-radius: 20px;       /* 圓角更可愛 */
 }
 
+.img-left img {
+    display: block;
+    margin: 0 0 20px 0 !important;
+}
+
+.img-center img {
+    display: block;
+    margin: 0 auto 20px auto !important;
+}
+
 :root {
     --global-font-size: 14px;
     --global-bg: #f7eafda1;
