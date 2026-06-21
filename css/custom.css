@@ -15,6 +15,11 @@ strong, b {
     margin: 0 auto 20px auto !important;
 }
 
+.MathJax,
+.MathJax {
+    font-size: 1.2em !important;
+}
+
 :root {
     --global-font-size: 14px;
     --global-bg: #f7eafda1;
