@@ -94,10 +94,33 @@ html[data-theme='dark'] a:hover {
     background-repeat: repeat !important; 
 }
 
+#footer {
+    position: relative;
+    background-color: #5c3e69;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center bottom;
+}
+
 /*================================
             頂部導覽列
 ==================================*/
 /* 頂部導覽列 */
+
+#page-header {
+    position: relative;
+    width: 100%;
+    background-color: #946aa7;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
 #page-header.nav-fixed #nav a:hover, 
 #page-header.nav-fixed #nav span.site-page:hover, 
 #page-header.nav-fixed #nav #toggle-menu:hover {
@@ -553,13 +576,16 @@ html[data-theme='dark'] .social-share .icon-facebook:hover {
     color: #000000;
 }
 
-
-
-
-
-
-
-
+.imgHover, .article-sort-item-img :first-child, 
+#recent-posts .recent-post-item .post_cover .post-bg, 
+#aside-content .aside-list > .aside-list-item .thumbnail :first-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 375ms ease-in 0.2s, transform 0.6s;
+    background: transparent;
+    margin: 0 auto;
+}
 
 
 @font-face {
